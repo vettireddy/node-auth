@@ -1,6 +1,7 @@
 var path = require('path');
 const apis = [
-  'login'
+  'login', 
+  'register'
 ];
 
 apis.forEach(api => {

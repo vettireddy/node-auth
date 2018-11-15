@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/login', apis.login);
-// router.post('/register', apis.register);
+router.post('/register', apis.register);
 // router.get('/profile', apis.profile);
 
 
