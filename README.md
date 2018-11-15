@@ -1,2 +1,2 @@
 # node-auth
-A Node application, example with passport local strategy, express session &amp; session store in mongodb
+A Node RestAPI application, example with passport local strategy, express session &amp; session store in mongodb
