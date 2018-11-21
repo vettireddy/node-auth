@@ -6,8 +6,12 @@ const db_url = `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${proces
 // mongoose.connect('mongodb://username:password@host:port/database?options...');
 
 mongoose.connect(db_url, { useNewUrlParser: true }, err => {
-  if (err) console.log(err);
-  console.log('connected to mongodb')
+  if (err) {
+    console.error(err);
+    console.error('connection to mongodb failed');
+  } else {
+    console.log('connected to mongodb')
+  }
 });
 
 module.exports = mongoose;
